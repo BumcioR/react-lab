@@ -30,6 +30,10 @@ function App() {
 
   }
 
+  function handleClick(event) {
+
+    alert(title);
+  }
 
   return (
 
@@ -41,7 +45,10 @@ function App() {
           {title.length > 0 && <div>{message}</div>}
 
           <input type="text" value={title} onChange={handleChange}/>
+          
+          {/* <button onClick={handleClick}>Show movie title</button> */}
 
+          <button onClick={() => alert(title)}> Show movie title</button>
       </div>
 
   );
